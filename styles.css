@@ -1,1 +1,174 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Fullscreen Image Section */
+        .fullscreen-image-section {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* 100% of the viewport height */
+            overflow: hidden;
+        }
+
+        .fullscreen-image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the image covers the entire container */
+        }
+
+        /* Text Overlay */
+        .text-overlay {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .text-overlay h1 {
+            margin: 0;
+            font-size: 3.5em;
+        }
+
+        .text-overlay h2 {
+            margin: 10px 0 0;
+            font-size: 2em;
+        }
+
+}
+
+.language-skill{
+    text-align: center;
+}
+.two-column-layout {
+    display: flex;
+    margin: 20px;
+}
+
+.exam-column-layout {
+    display: flex;
+    margin: 70px;
+}
+.information-column-layout{
+    display: flex;
+    margin: 100px;
+}
+
+.image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.three-column-layout {
+    background-color: black;
+    display: flex;
+    margin: 60px;
+    padding: 100px;
+    line-height: 1.5;
+    text-align: center;
+}
+.four-column-layout {
+    display: flex;
+    margin: 60px;
+    line-height: 1.5;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-right: 10px;
+}
+.text{
+   line-height: 1.5;
+   padding: 60;
+}
+.language-skill {
+    text-align: center;
+    font-size: large;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    /* Hamburger Menu Icon */
+    .menu-icon {
+        display: block;
+        color: #fff;
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #000000;
+    }
+
+    ul.show {
+        display: flex;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+    .welcome-section {
+        padding: 10px;
+        font-size: medium;
+        text-align: center;
+    }
+}
 
